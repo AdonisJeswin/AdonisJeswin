@@ -51,7 +51,7 @@ Currently, I’m diving deeper into **Data Structures, Algorithms, and Cybersecu
 ---
 
 ## 📫 Connect with Me
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white)](www.linkedin.com/in/adonis-jeswin)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adonis-jeswin)
 
 
 ---
