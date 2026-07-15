@@ -58,6 +58,11 @@
       from { opacity: 0; transform: translateX(-5px); }
       to { opacity: 1; transform: translateX(0); }
     }
+    
+    @keyframes cursorReveal {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
 
     /* Animation Classes */
     .spin-cw { transform-origin: 620px 175px; animation: spinCW 25s linear infinite; }
@@ -71,7 +76,7 @@
     .line-4 { animation: revealText 0.4s ease-out forwards; animation-delay: 2.6s; opacity: 0; }
     
     .cursor-line-4 { 
-      animation: revealText 0.1s ease-out forwards, blink 1s step-end infinite; 
+      animation: cursorReveal 0.1s ease-out forwards, blink 1s step-end infinite; 
       animation-delay: 3.0s, 3.1s; 
       opacity: 0; 
     }
@@ -156,29 +161,29 @@
     <text x="55" y="-14" font-family="monospace" font-size="11" fill="#8b949e" font-weight="bold">guest@terminal: ~</text>
 
     <!-- Line 1 -->
-    <g class="line-1" transform="translate(0, 20)">
-      <text class="term-text" font-size="15">
+    <g transform="translate(0, 20)">
+      <text class="term-text line-1" font-size="15">
         <tspan fill="#ff0844">> </tspan>INIT SECURE_SHELL... <tspan fill="#00f2fe">DONE</tspan>
       </text>
     </g>
 
     <!-- Line 2 -->
-    <g class="line-2" transform="translate(0, 52)">
-      <text class="term-text" font-size="19">
+    <g transform="translate(0, 52)">
+      <text class="term-text line-2" font-size="19">
         <tspan fill="#ff0844">> </tspan>ACCESSING: <tspan fill="#ffffff">ADONIS JESWIN</tspan>
       </text>
     </g>
 
     <!-- Line 3 -->
-    <g class="line-3" transform="translate(0, 84)">
-      <text class="term-text" font-size="15">
+    <g transform="translate(0, 84)">
+      <text class="term-text line-3" font-size="15">
         <tspan fill="#ff0844">> </tspan>ROLE: <tspan fill="#00f2fe">SEC_ENG &amp; DEV</tspan>
       </text>
     </g>
 
     <!-- Line 4 -->
-    <g class="line-4" transform="translate(0, 116)">
-      <text class="term-text" font-size="14.5">
+    <g transform="translate(0, 116)">
+      <text class="term-text line-4" font-size="14.5">
         <tspan fill="#ff0844">> </tspan>SYS_STATUS: <tspan fill="#27c93f" class="pulse-glow">ACTIVE [127.0.0.1]</tspan>
       </text>
     </g>

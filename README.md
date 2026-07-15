@@ -10,6 +10,10 @@
   <!-- Main Name Header -->
   <h1>🧑‍💻 ADONIS JESWIN</h1>
   
+  <p align="center">
+    <img src="https://komarev.com/ghpvc/?username=AdonisJeswin&amp;label=SYSTEM+VIEWS&amp;color=00FF99&amp;style=for-the-badge" alt="Profile Views">
+  </p>
+  
   <!-- Interactive Subtitle -->
   <h3>📡 SECURE CONNECTION ESTABLISHED // WELCOME TO MY DIGITAL TERMINAL</h3>
   <p><i>Full-Stack Engineer &amp; Cybersecurity Specialist // Building intelligent, secure, and decentralized systems.</i></p>
@@ -22,22 +26,17 @@
 
 <!-- TELEMETRY AND SYSTEM DIAGNOSTICS SECTION -->
 <div align="center">
-  <table border="0" cellpadding="5" cellspacing="0" width="100%">
-    <tr>
-      <td width="50%" align="center" valign="top">
-        <!-- Streak Stats Widget (Verified Working) -->
-        <a href="https://github.com/DenverCoder1/github-readme-streak-stats">
-          <img src="https://github-readme-streak-stats.herokuapp.com/?user=AdonisJeswin&amp;theme=tokyonight" alt="Contribution Streak Stats" width="90%">
-        </a>
-      </td>
-      <td width="50%" align="center" valign="top">
-        <!-- Quotes Widget (Verified Working Vercel instance) -->
-        <a href="https://github.com/zhravan/github-readme-quotes">
-          <img src="https://github-readme-quotes-bay.vercel.app/quote?theme=tokyonight" alt="Daily Tech Quote" width="90%">
-        </a>
-      </td>
-    </tr>
-  </table>
+  <!-- Streak Stats Widget (Verified Working) -->
+  <a href="https://github.com/DenverCoder1/github-readme-streak-stats">
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=AdonisJeswin&amp;theme=tokyonight" alt="Contribution Streak Stats" width="80%">
+  </a>
+  
+  <br><br>
+  
+  <!-- Quotes Widget (Verified Working Vercel instance) -->
+  <a href="https://github.com/zhravan/github-readme-quotes">
+    <img src="https://github-readme-quotes-bay.vercel.app/quote?theme=tokyonight" alt="Daily Tech Quote" width="80%">
+  </a>
 </div>
 
 <br>
@@ -62,44 +61,32 @@
 <details>
   <summary><h3>📂 [QUERY] Technical Skills Inventory</h3></summary>
   <br>
-  <table width="100%">
-    <tr>
-      <td width="50%" valign="top">
-        <h4>🧠 Languages &amp; Core Sockets</h4>
-        <ul>
-          <li><b>High-Level Logic:</b> Python, Java, C++, C</li>
-          <li><b>Frontend/Web:</b> JavaScript (ES6+), TypeScript</li>
-          <li><b>Decentralized:</b> Solidity (Smart Contracts)</li>
-          <li><b>Data Storage:</b> SQL (PostgreSQL, MySQL, SQLite, MongoDB)</li>
-        </ul>
-      </td>
-      <td width="50%" valign="top">
-        <h4>⚡ Frameworks &amp; Runtimes</h4>
-        <ul>
-          <li><b>Backend Architectures:</b> Node.js, Express.js, FastAPI, Flask, Django</li>
-          <li><b>Frontend Interfaces:</b> React, Next.js, Vite</li>
-          <li><b>Mobile Platforms:</b> React Native (Expo)</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td width="50%" valign="top">
-        <h4>🛡️ AI/ML &amp; Cryptography</h4>
-        <ul>
-          <li><b>Security &amp; Encryption:</b> OpenCV, Fernet (PBKDF2-HMAC), Cyber SAGE Security Audits</li>
-          <li><b>Cognitive Processing:</b> XGBoost, scikit-learn, PyTorch, FAISS (Vector Index)</li>
-          <li><b>Large Language Models:</b> Sentence-Transformers, HuggingFace Transformers, Groq &amp; Gemini APIs</li>
-        </ul>
-      </td>
-      <td width="50%" valign="top">
-        <h4>🛠️ DevOps &amp; Protocols</h4>
-        <ul>
-          <li><b>Environment Sockets:</b> Git, Docker, Linux, AWS, Vercel, Hardhat, Truffle</li>
-          <li><b>Data Ingestion Pipelines:</b> RESTful APIs, WebSockets, Pandas, BeautifulSoup (Web Scraping)</li>
-        </ul>
-      </td>
-    </tr>
-  </table>
+
+  ### 🧠 Languages &amp; Core Sockets
+  - **High-Level Logic:** Python, Java, C++, C
+  - **Frontend &amp; Web:** JavaScript (ES6+), TypeScript
+  - **Decentralized:** Solidity (Smart Contracts)
+  - **Data Storage:** SQL (PostgreSQL, MySQL, SQLite, MongoDB)
+
+  ---
+
+  ### ⚡ Frameworks &amp; Runtimes
+  - **Backend Architectures:** Node.js, Express.js, FastAPI, Flask, Django
+  - **Frontend Interfaces:** React, Next.js, Vite
+  - **Mobile Platforms:** React Native (Expo)
+
+  ---
+
+  ### 🛡️ AI/ML &amp; Cryptography
+  - **Security &amp; Encryption:** OpenCV, Fernet (PBKDF2-HMAC), Cyber SAGE Security Audits
+  - **Cognitive Processing:** XGBoost, scikit-learn, PyTorch, FAISS (Vector Index)
+  - **Large Language Models:** Sentence-Transformers, HuggingFace Transformers, Groq &amp; Gemini APIs
+
+  ---
+
+  ### 🛠️ DevOps &amp; Protocols
+  - **Environment Sockets:** Git, Docker, Linux, AWS, Vercel, Hardhat, Truffle
+  - **Data Ingestion Pipelines:** RESTful APIs, WebSockets, Pandas, BeautifulSoup (Web Scraping)
 </details>
 
 <br>
@@ -169,27 +156,26 @@
 <details>
   <summary><h3>📂 [INIT] Communication Sockets &amp; Channels</h3></summary>
   <br>
-  <p align="center"><i>Select a communication socket to initialize a handshake:</i></p>
+  <p><i>Select a communication socket or copy the credentials directly below:</i></p>
+  
+  *   **💼 LinkedIn Profile:** [linkedin.com/in/adonis-jeswin](https://linkedin.com/in/adonis-jeswin) — *Connect for professional opportunities and updates.*
+  *   **📧 Email Compose:** [adonisjeswin01@gmail.com](https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=adonisjeswin01@gmail.com) — *Pre-fills a message on Gmail Web client (or use standard mailto: [adonisjeswin01@gmail.com](mailto:adonisjeswin01@gmail.com)).*
+  *   **🐙 GitHub Hub:** [github.com/AdonisJeswin](https://github.com/AdonisJeswin) — *Explore secure code repositories and active commits.*
+
+  <br>
+  
   <div align="center">
-    <table border="0" cellpadding="10" cellspacing="0">
-      <tr>
-        <td align="center">
-          <a href="https://linkedin.com/in/adonis-jeswin">
-            <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn Socket">
-          </a>
-        </td>
-        <td align="center">
-          <a href="mailto:adonisjeswin01@gmail.com">
-            <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" alt="Email Socket">
-          </a>
-        </td>
-        <td align="center">
-          <a href="https://github.com/AdonisJeswin">
-            <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub Socket">
-          </a>
-        </td>
-      </tr>
-    </table>
+    <a href="https://linkedin.com/in/adonis-jeswin">
+      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn Badge">
+    </a>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=adonisjeswin01@gmail.com">
+      <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" alt="Email Badge">
+    </a>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://github.com/AdonisJeswin">
+      <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub Badge">
+    </a>
   </div>
 </details>
 
