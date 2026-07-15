@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="100%" height="100%">
+  <defs>
+    <!-- Cyan Glow -->
+    <filter id="cyanGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- Pink Glow -->
+    <filter id="pinkGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .panel-bg {
+      fill: #0d1117;
+      stroke: #21262d;
+      stroke-width: 1.5;
+      rx: 6;
+      ry: 6;
+    }
+    
+    .panel-title {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 11px;
+      font-weight: bold;
+      fill: #8b949e;
+      letter-spacing: 1px;
+    }
+    
+    .console-text {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 11px;
+      fill: #e2e8f0;
+    }
+    
+    .status-ok {
+      fill: #27c93f;
+      filter: url(#cyanGlow);
+    }
+    
+    .pulse {
+      animation: pulseBlink 2s ease-in-out infinite;
+    }
+    
+    .pulse-pink {
+      animation: pulseBlink 1.5s ease-in-out infinite;
+    }
+    
+    @keyframes pulseBlink {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 1; filter: drop-shadow(0 0 4px #00f2fe); }
+    }
+    
+    @keyframes dashoffset {
+      to {
+        stroke-dashoffset: -40;
+      }
+    }
+    .marching-ants {
+      stroke-dasharray: 5;
+      animation: dashoffset 2s linear infinite;
+    }
+  </style>
+
+  <!-- Border and Background -->
+  <rect class="panel-bg" width="800" height="200"/>
+
+  <!-- Grid Pattern overlay on wave panel -->
+  <g opacity="0.15">
+    <line x1="20" y1="30" x2="350" y2="30" stroke="#8b949e" stroke-width="0.5" stroke-dasharray="2 2"/>
+    <line x1="20" y1="60" x2="350" y2="60" stroke="#8b949e" stroke-width="0.5" stroke-dasharray="2 2"/>
+    <line x1="20" y1="90" x2="350" y2="90" stroke="#8b949e" stroke-width="0.5" stroke-dasharray="2 2"/>
+    <line x1="20" y1="120" x2="350" y2="120" stroke="#8b949e" stroke-width="0.5" stroke-dasharray="2 2"/>
+    <line x1="20" y1="150" x2="350" y2="150" stroke="#8b949e" stroke-width="0.5" stroke-dasharray="2 2"/>
+    <line x1="20" y1="180" x2="350" y2="180" stroke="#8b949e" stroke-width="0.5" stroke-dasharray="2 2"/>
+    
+    <line x1="75" y1="20" x2="75" y2="180" stroke="#8b949e" stroke-width="0.5" stroke-dasharray="2 2"/>
+    <line x1="130" y1="20" x2="130" y2="180" stroke="#8b949e" stroke-width="0.5" stroke-dasharray="2 2"/>
+    <line x1="185" y1="20" x2="185" y2="180" stroke="#8b949e" stroke-width="0.5" stroke-dasharray="2 2"/>
+    <line x1="240" y1="20" x2="240" y2="180" stroke="#8b949e" stroke-width="0.5" stroke-dasharray="2 2"/>
+    <line x1="295" y1="20" x2="295" y2="180" stroke="#8b949e" stroke-width="0.5" stroke-dasharray="2 2"/>
+  </g>
+
+  <!-- WAVE SCOPE PANEL (Left) -->
+  <g transform="translate(10, 0)">
+    <text class="panel-title" x="20" y="25">📡 WAVE_SCOPE [COGNITIVE_ACTIVITY]</text>
+    
+    <!-- Outer Scope Border -->
+    <rect x="20" y="35" width="340" height="145" fill="none" stroke="#21262d" stroke-width="1"/>
+    
+    <!-- Scope Center Crosshair -->
+    <line x1="190" y1="35" x2="190" y2="180" stroke="#21262d" stroke-width="1" stroke-dasharray="3 3"/>
+    <line x1="20" y1="107.5" x2="360" y2="107.5" stroke="#21262d" stroke-width="1" stroke-dasharray="3 3"/>
+
+    <!-- Morphing Waveform 1 (Primary Cyan) -->
+    <path fill="none" stroke="#00f2fe" stroke-width="2.5" filter="url(#cyanGlow)">
+      <animate attributeName="d" 
+               values="M 20 107 C 60 40, 100 40, 140 107 C 180 174, 220 174, 260 107 C 300 40, 340 40, 360 107;
+                       M 20 107 C 60 174, 100 174, 140 107 C 180 40, 220 40, 260 107 C 300 174, 340 174, 360 107;
+                       M 20 107 C 60 40, 100 40, 140 107 C 180 174, 220 174, 260 107 C 300 40, 340 40, 360 107"
+               dur="3s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Morphing Waveform 2 (Secondary Pink, offset and faster) -->
+    <path fill="none" stroke="#ff0844" stroke-width="1" opacity="0.6" filter="url(#pinkGlow)">
+      <animate attributeName="d" 
+               values="M 20 107 C 50 160, 80 50, 140 107 C 200 160, 230 50, 290 107 C 330 160, 350 70, 360 107;
+                       M 20 107 C 50 50, 80 160, 140 107 C 200 50, 230 160, 290 107 C 330 50, 350 150, 360 107;
+                       M 20 107 C 50 160, 80 50, 140 107 C 200 160, 230 50, 290 107 C 330 160, 350 70, 360 107"
+               dur="2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- DIAGNOSTIC LIST PANEL (Right) -->
+  <g transform="translate(380, 0)">
+    <text class="panel-title" x="20" y="25">📂 ACTIVE_COGNITIVE_MODULES [DIAGNOSTICS]</text>
+    
+    <!-- Diagnostic Item 1 -->
+    <g transform="translate(20, 45)">
+      <circle class="status-ok pulse" cx="10" cy="5" r="5"/>
+      <text class="console-text" x="25" y="9">
+        <tspan font-weight="bold" fill="#00f2fe">GUARDIAN_AG:</tspan> THREAT_INTEL ENGINE [OK] <tspan fill="#8b949e">(XGBoost/99.4%)</tspan>
+      </text>
+    </g>
+
+    <!-- Diagnostic Item 2 -->
+    <g transform="translate(20, 75)">
+      <circle class="status-ok pulse" cx="10" cy="5" r="5" style="animation-delay: 0.5s;"/>
+      <text class="console-text" x="25" y="9">
+        <tspan font-weight="bold" fill="#00f2fe">BIOCHAIN_AI:</tspan> HEALTHCARE NODE_01 [OK] <tspan fill="#8b949e">(IPFS/Solidity)</tspan>
+      </text>
+    </g>
+
+    <!-- Diagnostic Item 3 -->
+    <g transform="translate(20, 105)">
+      <circle class="status-ok pulse" cx="10" cy="5" r="5" style="animation-delay: 1s;"/>
+      <text class="console-text" x="25" y="9">
+        <tspan font-weight="bold" fill="#00f2fe">NETWORK_IDS:</tspan> ANOMALY_SCANNER [OK] <tspan fill="#8b949e">(CICIDS17/SHAP)</tspan>
+      </text>
+    </g>
+
+    <!-- Diagnostic Item 4 -->
+    <g transform="translate(20, 135)">
+      <circle class="status-ok pulse" cx="10" cy="5" r="5" style="animation-delay: 1.5s;"/>
+      <text class="console-text" x="25" y="9">
+        <tspan font-weight="bold" fill="#00f2fe">STEGO_CIPHER:</tspan> DATA ENCODER [OK] <tspan fill="#8b949e">(OpenCV/Fernet)</tspan>
+      </text>
+    </g>
+    
+    <!-- Status Progress Bar at bottom of diagnostics -->
+    <g transform="translate(20, 160)">
+      <text class="console-text" x="0" y="10" fill="#8b949e" font-size="9">CORE STABILITY:</text>
+      <rect x="90" y="2" width="260" height="8" fill="#161b22" rx="3" ry="3"/>
+      <!-- Glowing inner bar -->
+      <rect x="90" y="2" width="245" height="8" fill="#00f2fe" rx="3" ry="3" filter="url(#cyanGlow)" class="marching-ants">
+        <animate attributeName="width" values="100; 245; 230; 245; 200; 245" keyTimes="0; 0.2; 0.4; 0.6; 0.8; 1" dur="10s" repeatCount="indefinite"/>
+      </rect>
+      <text class="console-text" x="355" y="10" fill="#00f2fe" font-weight="bold" font-size="10">94.3%</text>
+    </g>
+  </g>
+</svg>
