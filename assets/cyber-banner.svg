@@ -54,12 +54,27 @@
       50% { opacity: 0; }
     }
     
+    @keyframes revealText {
+      from { opacity: 0; transform: translateX(-5px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
     /* Animation Classes */
     .spin-cw { transform-origin: 620px 175px; animation: spinCW 25s linear infinite; }
     .spin-ccw { transform-origin: 620px 175px; animation: spinCCW 15s linear infinite; }
     .pulse-glow { animation: pulse 3s ease-in-out infinite; }
     .float-anim { animation: float 6s ease-in-out infinite; }
-    .cursor-blink { animation: blink 1s step-end infinite; }
+    
+    .line-1 { animation: revealText 0.4s ease-out forwards; animation-delay: 0.2s; opacity: 0; }
+    .line-2 { animation: revealText 0.4s ease-out forwards; animation-delay: 1.0s; opacity: 0; }
+    .line-3 { animation: revealText 0.4s ease-out forwards; animation-delay: 1.8s; opacity: 0; }
+    .line-4 { animation: revealText 0.4s ease-out forwards; animation-delay: 2.6s; opacity: 0; }
+    
+    .cursor-line-4 { 
+      animation: revealText 0.1s ease-out forwards, blink 1s step-end infinite; 
+      animation-delay: 3.0s, 3.1s; 
+      opacity: 0; 
+    }
     
     /* Hover Effects */
     .hud-group:hover .spin-cw { animation-duration: 5s; }
@@ -73,8 +88,6 @@
       font-weight: bold;
       fill: #e2e8f0;
     }
-    .accent-cyan { fill: #00f2fe; }
-    .accent-pink { fill: #ff0844; }
   </style>
 
   <!-- Background -->
@@ -142,64 +155,36 @@
     <circle cx="35" cy="-17" r="4" fill="#27c93f"/>
     <text x="55" y="-14" font-family="monospace" font-size="10" fill="#8b949e">guest@terminal: ~</text>
 
-    <!-- Typing lines using SVG clipPath or width animations -->
     <!-- Line 1 -->
-    <g transform="translate(0, 20)">
-      <clipPath id="clip1">
-        <rect x="0" y="-15" width="340" height="25">
-          <animate attributeName="width" values="0; 0; 340; 340" keyTimes="0; 0.05; 0.3; 1" dur="8s" repeatCount="indefinite"/>
-        </rect>
-      </clipPath>
-      <text class="term-text" clip-path="url(#clip1)" font-size="14">
+    <g class="line-1" transform="translate(0, 20)">
+      <text class="term-text" font-size="14">
         <tspan fill="#ff0844">> </tspan>INIT SECURE_SHELL... <tspan fill="#00f2fe">DONE</tspan>
       </text>
     </g>
 
     <!-- Line 2 -->
-    <g transform="translate(0, 50)">
-      <clipPath id="clip2">
-        <rect x="0" y="-15" width="340" height="25">
-          <animate attributeName="width" values="0; 0.3; 0.3; 340; 340" keyTimes="0; 0.3; 0.35; 0.6; 1" dur="8s" repeatCount="indefinite"/>
-        </rect>
-      </clipPath>
-      <text class="term-text" clip-path="url(#clip2)" font-size="16">
+    <g class="line-2" transform="translate(0, 50)">
+      <text class="term-text" font-size="16">
         <tspan fill="#ff0844">> </tspan>ACCESSING: <tspan fill="#ffffff">ADONIS JESWIN</tspan>
       </text>
     </g>
 
     <!-- Line 3 -->
-    <g transform="translate(0, 80)">
-      <clipPath id="clip3">
-        <rect x="0" y="-15" width="340" height="25">
-          <animate attributeName="width" values="0; 0.6; 0.65; 340; 340" keyTimes="0; 0.6; 0.65; 0.85; 1" dur="8s" repeatCount="indefinite"/>
-        </rect>
-      </clipPath>
-      <text class="term-text" clip-path="url(#clip3)" font-size="14">
+    <g class="line-3" transform="translate(0, 80)">
+      <text class="term-text" font-size="14">
         <tspan fill="#ff0844">> </tspan>ROLE: <tspan fill="#00f2fe">SEC_ENG &amp; DEV</tspan>
       </text>
     </g>
 
     <!-- Line 4 -->
-    <g transform="translate(0, 110)">
-      <clipPath id="clip4">
-        <rect x="0" y="-15" width="340" height="25">
-          <animate attributeName="width" values="0; 0.85; 0.9; 340; 340" keyTimes="0; 0.85; 0.9; 0.98; 1" dur="8s" repeatCount="indefinite"/>
-        </rect>
-      </clipPath>
-      <text class="term-text" clip-path="url(#clip4)" font-size="13">
+    <g class="line-4" transform="translate(0, 110)">
+      <text class="term-text" font-size="13">
         <tspan fill="#ff0844">> </tspan>SYS_STATUS: <tspan fill="#27c93f" class="pulse-glow">ACTIVE [127.0.0.1]</tspan>
       </text>
     </g>
-
-    <!-- Blinking Cursor -->
-    <g>
-      <!-- We position it at the end of the text. To keep it blinking and floating, we can use simple translation animation -->
-      <rect x="220" y="98" width="8" height="15" fill="#00f2fe" class="cursor-blink">
-        <!-- Move cursor dynamically according to typing lines -->
-        <animate attributeName="x" values="10; 180; 180; 220; 220; 250; 250; 280; 280" keyTimes="0; 0.3; 0.35; 0.6; 0.65; 0.85; 0.9; 0.98; 1" dur="8s" repeatCount="indefinite"/>
-        <animate attributeName="y" values="5; 5; 35; 35; 65; 65; 95; 95; 95" keyTimes="0; 0.3; 0.35; 0.6; 0.65; 0.85; 0.9; 0.98; 1" dur="8s" repeatCount="indefinite"/>
-      </rect>
-    </g>
+    
+    <!-- Blinking Cursor at the end of line 4 -->
+    <rect class="cursor-line-4" x="252" y="97" width="8" height="15" fill="#00f2fe"/>
   </g>
 
   <!-- Bottom tech stats status bar -->

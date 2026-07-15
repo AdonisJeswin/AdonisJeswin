@@ -5,7 +5,10 @@
   <!-- Animated Cyber Banner Header -->
   <img src="assets/cyber-banner.svg" width="100%" alt="Adonis Jeswin System Header">
   
-  <br>
+  <br><br>
+  
+  <!-- Main Name Header -->
+  <h1>🧑‍💻 ADONIS JESWIN</h1>
   
   <!-- Interactive Subtitle -->
   <h3>📡 SECURE CONNECTION ESTABLISHED // WELCOME TO MY DIGITAL TERMINAL</h3>
