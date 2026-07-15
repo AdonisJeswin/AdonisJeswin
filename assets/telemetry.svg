@@ -29,15 +29,15 @@
     
     .panel-title {
       font-family: 'Courier New', Courier, monospace;
-      font-size: 11px;
+      font-size: 12.5px;
       font-weight: bold;
       fill: #8b949e;
-      letter-spacing: 1px;
+      letter-spacing: 0.5px;
     }
     
     .console-text {
       font-family: 'Courier New', Courier, monospace;
-      font-size: 11px;
+      font-size: 12px;
       fill: #e2e8f0;
     }
     
@@ -48,10 +48,6 @@
     
     .pulse {
       animation: pulseBlink 2s ease-in-out infinite;
-    }
-    
-    .pulse-pink {
-      animation: pulseBlink 1.5s ease-in-out infinite;
     }
     
     @keyframes pulseBlink {
@@ -157,13 +153,13 @@
     
     <!-- Status Progress Bar at bottom of diagnostics -->
     <g transform="translate(20, 160)">
-      <text class="console-text" x="0" y="10" fill="#8b949e" font-size="9">CORE STABILITY:</text>
-      <rect x="90" y="2" width="260" height="8" fill="#161b22" rx="3" ry="3"/>
+      <text class="console-text" x="0" y="10" fill="#8b949e" font-size="10" font-weight="bold">CORE STABILITY:</text>
+      <rect x="100" y="2" width="210" height="8" fill="#161b22" rx="3" ry="3"/>
       <!-- Glowing inner bar -->
-      <rect x="90" y="2" width="245" height="8" fill="#00f2fe" rx="3" ry="3" filter="url(#cyanGlow)" class="marching-ants">
-        <animate attributeName="width" values="100; 245; 230; 245; 200; 245" keyTimes="0; 0.2; 0.4; 0.6; 0.8; 1" dur="10s" repeatCount="indefinite"/>
+      <rect x="100" y="2" width="195" height="8" fill="#00f2fe" rx="3" ry="3" filter="url(#cyanGlow)" class="marching-ants">
+        <animate attributeName="width" values="100; 195; 180; 195; 150; 195" keyTimes="0; 0.2; 0.4; 0.6; 0.8; 1" dur="10s" repeatCount="indefinite"/>
       </rect>
-      <text class="console-text" x="355" y="10" fill="#00f2fe" font-weight="bold" font-size="10">94.3%</text>
+      <text class="console-text" x="320" y="10" fill="#00f2fe" font-weight="bold" font-size="11">94.3%</text>
     </g>
   </g>
 </svg>

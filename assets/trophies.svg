@@ -53,15 +53,17 @@
     
     .card-title {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      font-size: 11px;
+      font-size: 12.5px;
       font-weight: bold;
       fill: #e2e8f0;
+      letter-spacing: 0.5px;
     }
     
     .card-subtitle {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      font-size: 9px;
+      font-size: 10.5px;
       fill: #8b949e;
+      font-weight: 500;
     }
     
     .icon {
@@ -87,9 +89,9 @@
   <g>
     <!-- Card 1: CodeWarts (Silver Cup) -->
     <g class="trophy-card" transform="translate(10, 10)">
-      <rect class="card-bg" width="180" height="110"/>
+      <rect class="card-bg" width="185" height="110"/>
       <!-- Icon (Silver Trophy Cup) -->
-      <g class="icon" transform="translate(15, 20)">
+      <g class="icon" transform="translate(10, 20)">
         <!-- Trophy Graphic -->
         <path d="M 20 10 L 40 10 L 40 30 C 40 45 20 45 20 30 Z" fill="#c0c0c0"/>
         <path d="M 15 15 C 10 15 10 25 15 25" fill="none" stroke="#c0c0c0" stroke-width="2.5"/>
@@ -98,50 +100,50 @@
         <circle cx="30" cy="5" r="3" fill="#00f2fe" filter="url(#cyanGlow)" class="pulse-icon"/>
       </g>
       <!-- Texts -->
-      <text class="card-title" x="70" y="45">CODEWARTS</text>
-      <text class="card-title" x="70" y="60" fill="#00f2fe">2ND PLACE WIN</text>
-      <text class="card-subtitle" x="70" y="80">Intercollegiate Coding</text>
-      <text class="card-subtitle" x="70" y="92">VSIT, Mumbai 2026</text>
+      <text class="card-title" x="65" y="42">CODEWARTS</text>
+      <text class="card-title" x="65" y="58" fill="#00f2fe">2ND PLACE WIN</text>
+      <text class="card-subtitle" x="65" y="78">Intercollegiate Coding</text>
+      <text class="card-subtitle" x="65" y="92">VSIT, Mumbai 2026</text>
     </g>
 
     <!-- Card 2: Quasar 4.0 (Gold Trophy) -->
-    <g class="trophy-card pink-hover" transform="translate(205, 10)">
-      <rect class="card-bg" width="180" height="110"/>
+    <g class="trophy-card pink-hover" transform="translate(210, 10)">
+      <rect class="card-bg" width="185" height="110"/>
       <!-- Icon (Gold Shield/Trophy) -->
-      <g class="icon" transform="translate(15, 20)">
+      <g class="icon" transform="translate(10, 20)">
         <path d="M 20 5 L 40 5 L 45 25 C 45 45 15 45 15 25 Z" fill="#ffd700"/>
         <path d="M 30 40 L 30 55 M 20 55 L 40 55" stroke="#daa520" stroke-width="3"/>
         <polygon points="30,10 33,18 41,18 35,23 37,31 30,26 23,31 25,23 19,18 27,18" fill="#ffffff"/>
         <circle cx="30" cy="-2" r="3" fill="#ff0844" filter="url(#pinkGlow)" class="pulse-icon"/>
       </g>
       <!-- Texts -->
-      <text class="card-title" x="70" y="45">QUASAR 4.0</text>
-      <text class="card-title" x="70" y="60" fill="#ff0844">TOP 60 NATIONAL</text>
-      <text class="card-subtitle" x="70" y="80">24Hr National Hack</text>
-      <text class="card-subtitle" x="70" y="92">VPPCOE, Mumbai 2026</text>
+      <text class="card-title" x="65" y="42">QUASAR 4.0</text>
+      <text class="card-title" x="65" y="58" fill="#ff0844">TOP 60 NATIONAL</text>
+      <text class="card-subtitle" x="65" y="78">24Hr National Hack</text>
+      <text class="card-subtitle" x="65" y="92">VPPCOE, Mumbai 2026</text>
     </g>
 
     <!-- Card 3: Cyber SAGE (Security Shield) -->
-    <g class="trophy-card" transform="translate(400, 10)">
-      <rect class="card-bg" width="180" height="110"/>
+    <g class="trophy-card" transform="translate(410, 10)">
+      <rect class="card-bg" width="185" height="110"/>
       <!-- Icon (Shield) -->
-      <g class="icon" transform="translate(15, 20)">
+      <g class="icon" transform="translate(10, 20)">
         <path d="M 30 5 L 50 15 L 50 40 C 50 55 30 65 30 65 C 30 65 10 55 10 40 L 10 15 Z" fill="#1f293d" stroke="#00f2fe" stroke-width="2"/>
         <path d="M 30 12 L 43 20 L 43 38 C 43 48 30 56 30 56 Z" fill="#00f2fe" opacity="0.6"/>
         <path d="M 23 35 L 28 40 L 38 30" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
       </g>
       <!-- Texts -->
-      <text class="card-title" x="70" y="45">CYBER SAGE</text>
-      <text class="card-title" x="70" y="60" fill="#00f2fe">MASTERY LEVEL</text>
-      <text class="card-subtitle" x="70" y="80">Security Mastery Cert</text>
-      <text class="card-subtitle" x="70" y="92">Hacktify &amp; IET 2024</text>
+      <text class="card-title" x="65" y="42">CYBER SAGE</text>
+      <text class="card-title" x="65" y="58" fill="#00f2fe">MASTERY LEVEL</text>
+      <text class="card-subtitle" x="65" y="78">Security Mastery Cert</text>
+      <text class="card-subtitle" x="65" y="92">Hacktify &amp; IET 2024</text>
     </g>
 
     <!-- Card 4: IBM AI Architect (Brain/Gear) -->
-    <g class="trophy-card pink-hover" transform="translate(595, 10)">
-      <rect class="card-bg" width="180" height="110"/>
+    <g class="trophy-card pink-hover" transform="translate(610, 10)">
+      <rect class="card-bg" width="185" height="110"/>
       <!-- Icon (Brain & Gear) -->
-      <g class="icon" transform="translate(15, 20)">
+      <g class="icon" transform="translate(10, 20)">
         <!-- Gear -->
         <circle cx="30" cy="32" r="14" fill="none" stroke="#ff0844" stroke-width="3"/>
         <circle cx="30" cy="32" r="8" fill="#1f293d"/>
@@ -151,10 +153,10 @@
         <path d="M 30 10 L 30 28" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="2 2"/>
       </g>
       <!-- Texts -->
-      <text class="card-title" x="70" y="45">IBM AI AGENT</text>
-      <text class="card-title" x="70" y="60" fill="#ff0844">AI ARCHITECT</text>
-      <text class="card-subtitle" x="70" y="80">Apache Airflow &amp; LLM</text>
-      <text class="card-subtitle" x="70" y="92">SkillsBuild Certs 2026</text>
+      <text class="card-title" x="65" y="42">IBM AI AGENT</text>
+      <text class="card-title" x="65" y="58" fill="#ff0844">AI ARCHITECT</text>
+      <text class="card-subtitle" x="65" y="78">Apache Airflow &amp; LLM</text>
+      <text class="card-subtitle" x="65" y="92">SkillsBuild Certs 2026</text>
     </g>
   </g>
 </svg>

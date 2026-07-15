@@ -47,7 +47,7 @@
 
 <!-- MODULE 1: SYSTEM TELEMETRY -->
 <details>
-  <summary><b><code>📂 [EXECUTE: SYSTEM_DIAGNOSTICS_TELEMETRY]</code></b></summary>
+  <summary><h3>📂 [EXECUTE] System Diagnostics &amp; Telemetry</h3></summary>
   <br>
   <div align="center">
     <!-- Telmetry Scope SVG -->
@@ -60,7 +60,7 @@
 
 <!-- MODULE 2: TECHNICAL INVENTORY -->
 <details>
-  <summary><b><code>📂 [QUERY: TECHNICAL_SKILLS_INVENTORY]</code></b></summary>
+  <summary><h3>📂 [QUERY] Technical Skills Inventory</h3></summary>
   <br>
   <table width="100%">
     <tr>
@@ -106,7 +106,7 @@
 
 <!-- MODULE 3: PROJECTS DATABASE -->
 <details>
-  <summary><b><code>📂 [QUERY: TECHNICAL_PROJECTS_DATABASE]</code></b></summary>
+  <summary><h3>📂 [QUERY] Projects Database</h3></summary>
   <br>
   
   ### 🛡️ GuardianAG — Multi-Module Security Intelligence Platform
@@ -146,7 +146,7 @@
 
 <!-- MODULE 4: EXPERIENCE & DEPLOYMENTS -->
 <details>
-  <summary><b><code>📂 [DUMP: EXPERIENCE_AND_DEPLOYMENTS]</code></b></summary>
+  <summary><h3>📂 [DUMP] Experience &amp; Education Logs</h3></summary>
   <br>
   
   ### 💼 Experience Sockets
@@ -167,7 +167,7 @@
 
 <!-- MODULE 5: COMM CHANNEL CONNECTIONS -->
 <details>
-  <summary><b><code>📂 [INIT: COMMUNICATION_SOCKETS]</code></b></summary>
+  <summary><h3>📂 [INIT] Communication Sockets &amp; Channels</h3></summary>
   <br>
   <p align="center"><i>Select a communication socket to initialize a handshake:</i></p>
   <div align="center">

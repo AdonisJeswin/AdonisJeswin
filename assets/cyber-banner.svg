@@ -135,60 +135,60 @@
     <!-- Floating nodes -->
     <circle cx="480" cy="100" r="4" fill="#ff0844" filter="url(#pinkGlow)"/>
     <line x1="480" y1="100" x2="520" y2="120" stroke="#ff0844" stroke-width="0.5"/>
-    <text x="525" y="123" font-family="monospace" font-size="10" fill="#ff0844">SYS_SEC: ACTIVE</text>
+    <text x="525" y="123" font-family="monospace" font-size="11" fill="#ff0844" font-weight="bold">SYS_SEC: ACTIVE</text>
 
     <circle cx="730" cy="80" r="4" fill="#00f2fe" filter="url(#cyanGlow)"/>
     <line x1="730" y1="80" x2="700" y2="110" stroke="#00f2fe" stroke-width="0.5"/>
-    <text x="645" y="120" font-family="monospace" font-size="10" fill="#00f2fe">NODE_01: ONLINE</text>
+    <text x="645" y="120" font-family="monospace" font-size="11" fill="#00f2fe" font-weight="bold">NODE_01: ONLINE</text>
 
     <circle cx="500" cy="270" r="3" fill="#00f2fe" filter="url(#cyanGlow)"/>
     <line x1="500" y1="270" x2="540" y2="250" stroke="#00f2fe" stroke-width="0.5"/>
-    <text x="545" y="248" font-family="monospace" font-size="10" fill="#00f2fe">SYS_MEM: 94.3%</text>
+    <text x="545" y="248" font-family="monospace" font-size="11" fill="#00f2fe" font-weight="bold">SYS_MEM: 94.3%</text>
   </g>
 
   <!-- Typing Terminal Text (Left Side) -->
   <g transform="translate(50, 60)">
     <!-- Terminal Title Bar -->
-    <rect x="-10" y="-30" width="360" height="25" rx="5" ry="5" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <rect x="-10" y="-30" width="370" height="25" rx="5" ry="5" fill="#161b22" stroke="#30363d" stroke-width="1"/>
     <circle cx="5" cy="-17" r="4" fill="#ff5f56"/>
     <circle cx="20" cy="-17" r="4" fill="#ffbd2e"/>
     <circle cx="35" cy="-17" r="4" fill="#27c93f"/>
-    <text x="55" y="-14" font-family="monospace" font-size="10" fill="#8b949e">guest@terminal: ~</text>
+    <text x="55" y="-14" font-family="monospace" font-size="11" fill="#8b949e" font-weight="bold">guest@terminal: ~</text>
 
     <!-- Line 1 -->
     <g class="line-1" transform="translate(0, 20)">
-      <text class="term-text" font-size="14">
+      <text class="term-text" font-size="15">
         <tspan fill="#ff0844">> </tspan>INIT SECURE_SHELL... <tspan fill="#00f2fe">DONE</tspan>
       </text>
     </g>
 
     <!-- Line 2 -->
-    <g class="line-2" transform="translate(0, 50)">
-      <text class="term-text" font-size="16">
+    <g class="line-2" transform="translate(0, 52)">
+      <text class="term-text" font-size="19">
         <tspan fill="#ff0844">> </tspan>ACCESSING: <tspan fill="#ffffff">ADONIS JESWIN</tspan>
       </text>
     </g>
 
     <!-- Line 3 -->
-    <g class="line-3" transform="translate(0, 80)">
-      <text class="term-text" font-size="14">
+    <g class="line-3" transform="translate(0, 84)">
+      <text class="term-text" font-size="15">
         <tspan fill="#ff0844">> </tspan>ROLE: <tspan fill="#00f2fe">SEC_ENG &amp; DEV</tspan>
       </text>
     </g>
 
     <!-- Line 4 -->
-    <g class="line-4" transform="translate(0, 110)">
-      <text class="term-text" font-size="13">
+    <g class="line-4" transform="translate(0, 116)">
+      <text class="term-text" font-size="14.5">
         <tspan fill="#ff0844">> </tspan>SYS_STATUS: <tspan fill="#27c93f" class="pulse-glow">ACTIVE [127.0.0.1]</tspan>
       </text>
     </g>
     
     <!-- Blinking Cursor at the end of line 4 -->
-    <rect class="cursor-line-4" x="252" y="97" width="8" height="15" fill="#00f2fe"/>
+    <rect class="cursor-line-4" x="285" y="103" width="9" height="17" fill="#00f2fe"/>
   </g>
 
   <!-- Bottom tech stats status bar -->
   <rect x="30" y="295" width="740" height="1" fill="#1e293b"/>
-  <text x="40" y="315" font-family="monospace" font-size="11" fill="#4facfe" class="pulse-glow">⚡ CONNECTED TO SECURE SERVER</text>
-  <text x="760" y="315" font-family="monospace" font-size="11" fill="#64748b" text-anchor="end">LOC: MUMBAI, IN // LATENCY: 12ms</text>
+  <text x="40" y="316" font-family="monospace" font-size="12" fill="#4facfe" class="pulse-glow" font-weight="bold">⚡ CONNECTED TO SECURE SERVER</text>
+  <text x="760" y="316" font-family="monospace" font-size="12" fill="#64748b" text-anchor="end" font-weight="bold">LOC: MUMBAI, IN // LATENCY: 12ms</text>
 </svg>
